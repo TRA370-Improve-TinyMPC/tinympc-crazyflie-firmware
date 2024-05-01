@@ -199,7 +199,7 @@ void controllerOutOfTreeInit(void) {
 
   /* End of MPC initialization */  
 
-  en_traj = true;
+  en_traj = false;
   step = 0;  
   traj_iter = 0;
 }
