@@ -8,7 +8,7 @@ Install the dependencies at [building and flashing instructions](https://github.
 ## Building and Flashing
 ### Clone
 ```bat
-git clone https://github.com/TRA370-Improve-TinyMPC/tinympc-crazyflie-firmware
+git clone --recursive https://github.com/TRA370-Improve-TinyMPC/tinympc-crazyflie-firmware
 ```
 
 ### The first time you need to configure
