@@ -7,19 +7,27 @@ Install the dependencies at [building and flashing instructions](https://github.
 
 ## Building and Flashing
 ### Clone
-`git clone https://github.com/TRA370-Improve-TinyMPC/tinympc-crazyflie-firmware`
+```bat
+git clone https://github.com/TRA370-Improve-TinyMPC/tinympc-crazyflie-firmware
+```
 
 ### The first time you need to configure
-`cd tinympc-crazyflie-firmware`
-`make cf2_defconfig`
+```bat
+cd tinympc-crazyflie-firmware
+make cf2_defconfig
+```
 
 ### Every time you want to build 
 If you are in the root directory the next command will flash the default firmware. Which means it will use the stock controller and commander.
 But if you execute the following command in `examples/controller_tinympc/` then the tinympc controller will be enabled.
-`make -j12`
+```bat
+make -j12
+```
 
 ### To flash
-`CLOAD_CMDS="-w radio://0/1/2M" make cload`
+```bat
+CLOAD_CMDS="-w radio://0/1/2M" make cload
+```
 
 Where radio://0/1/2M is the address of the crazyflie. You can find it on cfclient
 
